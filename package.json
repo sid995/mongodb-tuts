@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/sid995/mongodb-tuts#readme",
   "dependencies": {
+    "mocha": "^5.2.0",
     "mongoose": "^5.3.1"
   }
 }
