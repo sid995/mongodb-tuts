@@ -1,0 +1,25 @@
+{
+  "name": "mongodb-tuts",
+  "version": "1.0.0",
+  "description": "MOngoDB tutorial files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sid995/mongodb-tuts.git"
+  },
+  "keywords": [
+    "mongo",
+    "mongodb",
+    "gut",
+    "tutorial"
+  ],
+  "author": "Siddharth Kundu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sid995/mongodb-tuts/issues"
+  },
+  "homepage": "https://github.com/sid995/mongodb-tuts#readme"
+}
