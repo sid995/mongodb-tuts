@@ -3,8 +3,10 @@ const MarioChar = require("../models/mariochar");
 
 // Describe tests
 describe("Finding records", function() {
+  var char;
+
   beforeEach(function(done) {
-    var char = new MarioChar({
+    char = new MarioChar({
       name: "Mario"
     });
     char.save().then(function() {
@@ -17,6 +19,15 @@ describe("Finding records", function() {
       name: "Mario"
     }).then(function(result) {
       assert(result.name === "Mario");
+      done();
+    });
+  });
+
+  it("Finds one record by ID from db", function(done) {
+    MarioChar.findOne({
+      _id: char._id
+    }).then(function(result) {
+      assert(result._id.toString === char._id.toString);
       done();
     });
   });
